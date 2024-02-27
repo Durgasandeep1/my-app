@@ -11,3 +11,99 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+#todlistcontainer li{
+  list-style: none;
+}
+#divmain {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  height: 100vh;
+  background-image: url("https://images.pexels.com/photos/5717479/pexels-photo-5717479.jpeg?cs=srgb&dl=pexels-polina-kovaleva-5717479.jpg&fm=jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.mainbody {
+  margin-top: 30px;
+  padding: 20px;
+  /* border: 2px solid #FF8C00; */
+  box-shadow: 10px 10px 30px white;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+#swag {
+  font-family: inherit;
+  font-size: 20px;
+  background: royalblue;
+  color: white;
+  padding: 20px;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+#swag span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+#swag svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+#swag:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+#swag:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+#swag:hover span {
+  transform: translateX(5em);
+}
+
+#swag:active {
+  transform: scale(0.95);
+}
+#swag {
+  width: 120px;
+  height: 10px;
+  margin-left: 20px;
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+
+#fle {
+  display: flex;
+  flex-direction: row;
+}
+#listdiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+#inpid {
+  width: 200px;
+  height: 25px;
+  border-radius: 20px;
+}
